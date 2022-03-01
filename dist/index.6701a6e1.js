@@ -23075,7 +23075,7 @@ class MovieView extends _reactDefault.default.Component {
                                 lineNumber: 12
                             },
                             __self: this,
-                            children: "Title:"
+                            children: "Title: "
                         }),
                         /*#__PURE__*/ _jsxRuntime.jsx("span", {
                             className: "value",
