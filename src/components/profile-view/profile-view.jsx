@@ -3,6 +3,10 @@ import React from "react";
 import "./profile-view.scss";
 import PropTypes from "prop-types";
 
+import { setUser } from "../../actions/actions";
+
+import { connect } from "react-redux";
+
 import { Container, Card, Button, Row, Col, Form, FormGroup, FormControl } from "react-bootstrap";
 import axios from "axios";
 
@@ -83,7 +87,7 @@ export class ProfileView extends React.Component {
         });
     };
 
-    onRemoveFavorite = (e, movies) => {
+    onRemoveFavorite = (e, movie) => {
         e.preventDefault();
         const Username = localStorage.getItem('user');
         const token = localStorage.getItem('token');
@@ -284,3 +288,9 @@ ProfileView.propTypes = {
     })).isRequired,
     onBackClick: PropTypes.func.isRequired
 };
+
+let mapStateToProps = state => {
+    return { movies: state.movies, user: state.user }
+}
+
+export default connect(mapStateToProps, { setUser })(ProfileView);

@@ -2,6 +2,9 @@ import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { Form, Button, Card, CardGroup, Container, Col, Row } from 'react-bootstrap';
 import { Link } from 'react-router-dom'
+import { connect } from "react-redux";
+
+import { setUser } from '../../actions/actions';
 
 import "./login-view.scss"
 
@@ -99,3 +102,7 @@ LoginView.propTypes = {
     }),
     onLoggedIn: PropTypes.func.isRequired
 };
+
+
+
+export default LoginView;
