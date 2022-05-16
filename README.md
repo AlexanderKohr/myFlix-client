@@ -1,42 +1,22 @@
-# myFlix
+# myFlix-client application (React app)
 
-A client-side application, created with React.js and Sass, called myFlix based on its existing server-side code (REST API and database).
+# Objective
 
-## Table of Contents
+Using React, build the client-side for an application called myFlix based on its existing server-side code (REST API and database).
+User Stories
 
-- [Description](#description)
-- [Technologies Used](#technologies-used)
-- [Features](#features)
-- [Screenshots](#screenshots)
-- [Authors](#authors)
-- [Version History](#version-history)
+    As a user, I want to be able to access information on movies, directors, and genres so that I can learn more about movies I’ve watched or am interested in.
+    As a user, I want to be able to create a profile so I can save data about my favorite movies.
 
-## Description
+# Technical Requirements
 
-Description goes here
-
-## Technologies Used
-
-- Tech 1 - version 1.0
-- Tech 2 - version 2.0
-- Tech 3 - version 3.0
-
-## Features
-
-- Feature 1
-- Feature 2
-- Feature 3
-
-## Screenshots
-
-## Authors
-
-Alexander Kohr
-
-## Version History
-
-- 0.2
-  - Various bug fixes and optimizations
-  - See [commit change]() or See [release history]()
-- 0.1
-  - Initial Release
+    The application must be a single-page application (SPA)
+    The application must use state routing to navigate between views and share URLs
+    The application must give users the option to filter movies
+    The application must give users the option to sort movies
+    The application must initially use Parcel as its build tool
+    The application must be written using the React library and in ES2015+
+    The application must be written with React Redux (hence respecting the Flux pattern)
+    The application must use Bootstrap as a UI library for styling and responsiveness
+    The application must contain a mix of class components and function components
+    The application may be hosted online
