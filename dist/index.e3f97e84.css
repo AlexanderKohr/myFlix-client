@@ -15,6 +15,8 @@
 #card-button {
   margin: auto;
   color: #f1fffa;
+  font-size: var(--fontsize-card-button);
+  font-weight: var(--fontweight-card-button);
 }
 
 #movie-card {
@@ -29,10 +31,53 @@
   font-size: var(--fontsize-card-title);
   font-weight: var(--fontweight-card-title);
 }
+:root {
+  --fontsize-login-card-title: 30px;
+  --fontweight-login-card-title: 600;
+  --fontsize-form-description: 20px;
+  --fontweight-form-description: 400;
+}
 
-#card-button {
-  font-size: var(--fontsize-card-button);
-  font-weight: var(--fontweight-card-button);
+* {
+  box-sizing: border-box;
+  font-family: "League Spartan", sans-serif;
+}
+
+#login-form {
+  max-width: 500px;
+}
+
+#login-form-label {
+  font-size: var(--fontsize-form-description);
+  font-weight: var(--fontweight-form-description);
+  margin-top: 15px;
+  margin-bottom: 0;
+}
+
+#login-card-title {
+  font-size: var(--fontsize-login-card-title);
+  font-weight: var(--fontweight-login-card-title);
+  text-align: center;
+  color: #e5383b;
+}
+
+#login-card {
+  border-color: #f1fffa;
+  border-width: 10px;
+  padding: 15px;
+  background-color: #020402;
+}
+
+#login-button {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #f1fffa;
+  background-color: #e5383b;
+  border: none;
+  float: right;
+  margin-top: 25px;
+  font-size: var(--fontsize-form-description);
+  font-weight: var(--fontweight-form-description);
 }
 :root {
   --fontsize-movie-title: 30px;
@@ -86,6 +131,57 @@
   border: none;
 }
 :root {
+  --fontsize-login-card-title: 30px;
+  --fontweight-login-card-title: 600;
+  --fontsize-form-description: 20px;
+  --fontweight-form-description: 400;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "League Spartan", sans-serif;
+}
+
+#registration-form {
+  max-width: 500px;
+}
+
+#registration-form-label {
+  font-size: var(--fontsize-form-description);
+  font-weight: var(--fontweight-form-description);
+  margin-top: 15px;
+  margin-bottom: 0;
+}
+
+#registration-card-title {
+  font-size: var(--fontsize-login-card-title);
+  font-weight: var(--fontweight-login-card-title);
+  text-align: center;
+  color: #e5383b;
+}
+
+#registration-card {
+  border-color: #f1fffa;
+  border-width: 10px;
+  padding: 15px;
+  background-color: #020402;
+}
+
+#register-button {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #f1fffa;
+  background-color: #e5383b;
+  border: none;
+  float: right;
+  margin-top: 25px;
+  font-size: var(--fontsize-form-description);
+  font-weight: var(--fontweight-form-description);
+}
+
+
+
+:root {
   --fontsize-navbar-brand: 30px;
   --fontsize-navbar-link: 20px;
   --fontweight-navbar-brand: 900;
@@ -111,8 +207,10 @@
 
 #navbar-brand {
   background-color: #e5383b;
+  color: #f1fffa;
   font-size: 30px;
   font-weight: 900;
+  margin-left: 20px;
 }
 
 #nav {
@@ -121,15 +219,31 @@
 
 #nav-link {
   background-color: #e5383b;
+  color: #f1fffa;
   font-size: 20px;
   font-weight: 600;
-  color: #020402;
 }
+:root {
+  --fontsize-button-text: 15px;
+  --fontweight-button-text: 400;
+}
+
 * {
   box-sizing: border-box;
   font-family: "League Spartan", sans-serif;
   background-color: #020402;
   color: #f1fffa;
+}
+
+#logout-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  color: #f1fffa;
+  background-color: #e5383b;
+  border: none;
+  font-size: var(--fontsize-button-text);
+  font-weight: var(--fontweight-button-text);
 }
 #main-view {
   margin-top: 100px;

@@ -37,11 +37,11 @@ export function LoginView(props) {
         return isReq;
     }
 
-    const handleSubmit = (e) => {
+    /*const handleSubmit = (e) => {
         e.preventDefault();
         const isReq = validate();
         if(isReq) {
-        /* Send a request to the server for authentication */
+        // Send a request to the server for authentication
             axios.post('https://movieanorak.herokuapp.com/login', {
                 Username: username,
                 Password: password
@@ -54,7 +54,27 @@ export function LoginView(props) {
                 console.log('no such user')
             });
         }
-    };
+    };*/
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        const isReq = validate();
+        if(isReq){
+        /* Send a request to the server for authentication */
+            axios.post('https://movieanorak.herokuapp.com/login', {
+            Username: username,
+            Password: password
+          })
+          .then(response => {
+            const data = response.data;
+            props.onLoggedIn(data);
+          })
+          .catch(e => {
+            console.log('no such user');
+            alert('Login information incorrect. Please try again.');
+          });
+        };
+      }
 
     return (
         <Container id="login-form">

@@ -7,7 +7,7 @@ import { setUser } from "../../actions/actions";
 
 import { connect } from "react-redux";
 
-import { Container, Card, Button, Row, Col, Form, FormGroup, FormControl } from "react-bootstrap";
+import { Container, Card, Button, Row, Col, Form, FormGroup, FormControl, CardGroup } from "react-bootstrap";
 import axios from "axios";
 
 export class ProfileView extends React.Component {
@@ -234,6 +234,7 @@ export class ProfileView extends React.Component {
 
                 <Row>
                     <Col>
+                    <CardGroup>
                     <Card>
                         <Card.Body>
                             {FavoriteMovies.length === 0 && (
@@ -263,6 +264,7 @@ export class ProfileView extends React.Component {
                             </Row>
                         </Card.Body>
                     </Card>
+                    </CardGroup>
                     </Col>
                 </Row>
             </Container>
