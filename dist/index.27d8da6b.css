@@ -178,9 +178,28 @@
   font-size: var(--fontsize-form-description);
   font-weight: var(--fontweight-form-description);
 }
+:root {
+  --fontsize-button-text: 15px;
+  --fontweight-button-text: 400;
+}
 
+* {
+  box-sizing: border-box;
+  font-family: "League Spartan", sans-serif;
+  background-color: #020402;
+  color: #f1fffa;
+}
 
-
+#logout-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  color: #f1fffa;
+  background-color: #e5383b;
+  border: none;
+  font-size: var(--fontsize-button-text);
+  font-weight: var(--fontweight-button-text);
+}
 :root {
   --fontsize-navbar-brand: 30px;
   --fontsize-navbar-link: 20px;
@@ -223,28 +242,9 @@
   font-size: 20px;
   font-weight: 600;
 }
-:root {
-  --fontsize-button-text: 15px;
-  --fontweight-button-text: 400;
-}
 
-* {
-  box-sizing: border-box;
-  font-family: "League Spartan", sans-serif;
-  background-color: #020402;
-  color: #f1fffa;
-}
 
-#logout-button {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  color: #f1fffa;
-  background-color: #e5383b;
-  border: none;
-  font-size: var(--fontsize-button-text);
-  font-weight: var(--fontweight-button-text);
-}
+
 #main-view {
   margin-top: 100px;
 }
