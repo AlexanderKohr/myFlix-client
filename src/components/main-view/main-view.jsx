@@ -197,7 +197,7 @@ class MainView extends React.Component {
 
           
 
-            <Route exact path="/profile" render={({ history }) => {
+            <Route exact path="/users/:Username" render={({ history }) => {
                         if (!user) {
                             return (
                                 <Col>
