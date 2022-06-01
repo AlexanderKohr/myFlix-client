@@ -13,7 +13,7 @@ export function NavbarView({user}) {
           
           <Navbar.Brand id="navbar-brand" href="/">myFlix</Navbar.Brand>
           <Nav id="nav" className="me-auto">
-          <Nav.Link id="profile-link" className="nav-item" as={Link} to={`/users/${user}`} >
+          <Nav.Link id="nav-link" className="nav-item" as={Link} to={`/users/${user}`} >
                          {user}
                         </Nav.Link>
           </Nav>
